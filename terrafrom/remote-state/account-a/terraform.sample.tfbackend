@@ -1,0 +1,4 @@
+# ${prefix}を差し替える
+bucket = "${prefix}-account-a-tfstate"
+key    = "remote-state/account-a/terraform.tfstate"
+region = "ap-northeast-1"

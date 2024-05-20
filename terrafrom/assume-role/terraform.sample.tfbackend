@@ -1,0 +1,4 @@
+# ${prefix}を差し替える
+bucket = "${prefix}-bastion-tfstate"
+key    = "assume-role/terraform.tfstate"
+region = "ap-northeast-1"
