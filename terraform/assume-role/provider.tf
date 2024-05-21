@@ -23,7 +23,7 @@ provider "aws" {
   alias  = "account_a"
   region = "ap-northeast-1"
   assume_role {
-    role_arn = "arn:aws:iam::${var.account_a.id}:role/${local.common_prefix}-terraform"
+    role_arn = "arn:aws:iam::${var.account_a.id}:role/${var.common_prefix}-terraform"
   }
   default_tags {
     tags = {
@@ -36,7 +36,7 @@ provider "aws" {
   alias  = "account_b"
   region = "ap-northeast-1"
   assume_role {
-    role_arn = "arn:aws:iam::${var.account_b.id}:role/${local.common_prefix}-terraform"
+    role_arn = "arn:aws:iam::${var.account_b.id}:role/${var.common_prefix}-terraform"
   }
   default_tags {
     tags = {
